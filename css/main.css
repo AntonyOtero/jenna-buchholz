@@ -26,6 +26,7 @@ body {
 header {
   position: fixed;
   z-index: 1;
+  transition: color 500ms;
 }
 
 h1 {
@@ -86,6 +87,16 @@ section {
 ///////// UTILITIES /////////
 ///////////////////////////*/
 
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background-color: #333;
+  z-index: 1;
+  transition: background-color 500ms;
+}
+
 .square {
   position: absolute;
   top: 50px;
@@ -101,4 +112,12 @@ section {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.progress.white {
+  background-color: #fff;
+}
+
+header.white {
+  color: #fff;
 }
