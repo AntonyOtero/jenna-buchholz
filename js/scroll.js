@@ -28,8 +28,8 @@ document.addEventListener('scroll', function() {
     const PARALLAX_TAGS = threshold.querySelectorAll(`[data-parallax]`)
 
     PARALLAX_TAGS.forEach( tag => {
-      const speed = parseFloat(SQUARE.getAttribute('data-parallax'))
-      SQUARE.style.transform = `translateY(${distanceToThreshold * speed}px)`
+      const speed = parseFloat(tag.getAttribute('data-parallax'))
+      tag.style.transform = `translateY(${distanceToThreshold * speed}px)`
     })
 
 
