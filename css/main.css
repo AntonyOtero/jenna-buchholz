@@ -19,6 +19,10 @@ body {
   background-color: #fff;
 }
 
+/*///////////////////
+////// HEADER //////
+//////////////////*/
+
 header {
   position: fixed;
   z-index: 1;
@@ -27,4 +31,45 @@ header {
 h1 {
   font-size: inherit;
   font-weight: normal;
+}
+
+/*////////////////////////////
+///////// SECTIONS //////////
+///////////////////////////*/
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c8dee0;
+  min-height: 100vh;
+  padding: 80px;
+}
+
+.content,
+.content img {
+  position: relative;
+}
+
+/*////////////////////////////
+///////// UTILITIES /////////
+///////////////////////////*/
+
+.square {
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  background-color: #d54156;
+}
+
+.circle {
+  position: absolute;
+  bottom: 50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  background-color: #5982a0;
+  border-radius: 50%;
 }
