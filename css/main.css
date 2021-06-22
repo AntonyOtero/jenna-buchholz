@@ -24,12 +24,14 @@ body {
 //////////////////*/
 
 header {
+  margin-left: 20px;
   position: fixed;
   z-index: 1;
   transition: color 500ms;
 }
 
 h1 {
+  margin-bottom: 0;
   font-size: inherit;
   font-weight: normal;
 }
@@ -43,7 +45,7 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 80px;
+  padding: 40px;
 }
 
 .content,
